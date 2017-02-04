@@ -26,14 +26,14 @@ t.test(juul2$weight,mu=45)
 Health <- read.csv("<file path>/Health.csv")
 
 #sample data looks like this:
-# ofp	ofnp	opp	opn age	emr	hosp	exclhlth	poorhlth	medicaid
+# ofp	ofnp	opp	opn age	emr	hosp  exclhlth   poorhlth	 medicaid
 																
-# 5 	0		  0 	0		6.9  0 	 1		  	0			0			1
-# 1	  0		  2	  0		7.4  2	 0		  	0			0			1
-# 13	0		  0 	0		6.6  3	 3		  	0			1			0
-# 16	0		  5 	0	  7.6  1 	 1		  	0			1			1
-# 3	  0		  0	  0	  7.9	 0 	 0		  	0			0			1
-# 17	0		  0	  0	  6.6	 0	 0		  	0			1			0
+# 5 	  0      0 	0   6.9  0 	 1	0		0		1
+# 1	  0	 2	0   7.4  2	 0  	0		0		1
+# 13	  0	 0 	0   6.6  3	 3  	0		1		0
+# 16	  0	 5 	0   7.6  1 	 1  	0		1		1
+# 3	  0	 0	0   7.9	 0 	 0  	0		0		1
+# 17	  0	 0	0   6.6	 0	 0  	0		1		0
 
 
 
@@ -79,14 +79,14 @@ round(p,4)
 Health <- read.csv("<File Pathh>/Health.csv")
 
 #sample data looks like this:
-# ofp	ofnp	opp	opn age	emr	hosp	exclhlth	poorhlth	medicaid
+# ofp	ofnp	opp	opn age	emr	hosp  exclhlth   poorhlth	 medicaid
 																
-# 5 	0		  0 	0		6.9  0 	 1		  	0			0			1
-# 1	  0		  2	  0		7.4  2	 0		  	0			0			1
-# 13	0		  0 	0		6.6  3	 3		  	0			1			0
-# 16	0		  5 	0	  7.6  1 	 1		  	0			1			1
-# 3	  0		  0	  0	  7.9	 0 	 0		  	0			0			1
-# 17	0		  0	  0	  6.6	 0	 0		  	0			1			0
+# 5 	  0      0 	0   6.9  0 	 1	0		0		1
+# 1	  0	 2	0   7.4  2	 0  	0		0		1
+# 13	  0	 0 	0   6.6  3	 3  	0		1		0
+# 16	  0	 5 	0   7.6  1 	 1  	0		1		1
+# 3	  0	 0	0   7.9	 0 	 0  	0		0		1
+# 17	  0	 0	0   6.6	 0	 0  	0		1		0
 
 
 #Finding 75% of the age in the data
