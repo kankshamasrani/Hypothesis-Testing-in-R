@@ -23,7 +23,19 @@ t.test(juul2$weight,mu=45)
 
 
 #Reading csv file "Health.csv" from the local, please replace this location with your file location
-Health <- read.csv("C:/Users/Sujit/Desktop/MSBAPM/Data Analysis using R/programs/Assignment 8/Health.csv")
+Health <- read.csv("<file path>/Health.csv")
+
+#sample data looks like this:
+# ofp	ofnp	opp	opn age	emr	hosp	exclhlth	poorhlth	medicaid
+																
+# 5 	0		  0 	0		6.9  0 	 1		  	0			0			1
+# 1	  0		  2	  0		7.4  2	 0		  	0			0			1
+# 13	0		  0 	0		6.6  3	 3		  	0			1			0
+# 16	0		  5 	0	  7.6  1 	 1		  	0			1			1
+# 3	  0		  0	  0	  7.9	 0 	 0		  	0			0			1
+# 17	0		  0	  0	  6.6	 0	 0		  	0			1			0
+
+
 
 #Test statistic is Mean of office visits =5.5
 tstat=mean(Health$ofp)
@@ -64,7 +76,18 @@ round(p,4)
 #We would like to conduct a nonparametric test for the hypothesis that the 75% percentile value of age is 7.7.
 
 #Reading the Health.csv file from the local system. Please use your location of the file
-Health <- read.csv("C:/Users/Sujit/Desktop/MSBAPM/Data Analysis using R/programs/Assignment 8/Health.csv")
+Health <- read.csv("<File Pathh>/Health.csv")
+
+#sample data looks like this:
+# ofp	ofnp	opp	opn age	emr	hosp	exclhlth	poorhlth	medicaid
+																
+# 5 	0		  0 	0		6.9  0 	 1		  	0			0			1
+# 1	  0		  2	  0		7.4  2	 0		  	0			0			1
+# 13	0		  0 	0		6.6  3	 3		  	0			1			0
+# 16	0		  5 	0	  7.6  1 	 1		  	0			1			1
+# 3	  0		  0	  0	  7.9	 0 	 0		  	0			0			1
+# 17	0		  0	  0	  6.6	 0	 0		  	0			1			0
+
 
 #Finding 75% of the age in the data
 tst=quantile(Health$age,probs=0.75)
@@ -103,4 +126,4 @@ round(p1,4)
 #Since p value is 0, we reject the hypothesis that 75th percentile of value of age is 7.7 
 
 #################################################################################
-
+#End of Script!#
