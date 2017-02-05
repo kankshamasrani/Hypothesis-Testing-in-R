@@ -19,7 +19,8 @@ t.test(juul2$weight,mu=45)
 ####Now let me show how to build a test for hypothesis. Technically I can name it after me :P (You can do as well ;) ) 
 
 #Read the file Health.csv. There is a variable called ofp which indicates the number of office visits. 
-#Assuming this number of office visits follows a poisson distribution (Count), Let's test the hypothesis that the mean number of office visits is 5.5
+#Assuming this number of office visits follows a poisson distribution (Count), 
+#Let's test the hypothesis that the mean number of office visits is 5.7
 
 
 #Reading csv file "Health.csv" from the local, please replace this location with your file location
@@ -37,13 +38,13 @@ Health <- read.csv("<file path>/Health.csv")
 
 
 
-#Test statistic is Mean of office visits =5.5
+#Test statistic is Mean of office 
 tstat=mean(Health$ofp)
 tstat
 
 #This function generates synthetic samples and returns sample means based on our assumed distribution & hypothesis 
 f1=function(){
-  x=rpois(nrow(Health),lambda =5.5) #Building assumed poisson distribution with our hypothesis
+  x=rpois(nrow(Health),lambda =5.7) #Building assumed poisson distribution with our hypothesis
  return(mean(x))
 }
 
@@ -66,7 +67,7 @@ p=length(s1)/length(sdist)
 round(p,4)
 
 
-#Since p value is 0, we reject the hypothesis that mean office visits are 5.5
+#Since p value is 0.04, we reject the hypothesis that mean office visits are 5.5 at a significance level of 5%
 
 ##################################
 
